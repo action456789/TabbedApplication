@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2E578EAA1E32124500CC3A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E578EA91E32124500CC3A1F /* AppDelegate.swift */; };
-		2E578EAC1E32124500CC3A1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E578EAB1E32124500CC3A1F /* FirstViewController.swift */; };
-		2E578EAE1E32124500CC3A1F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E578EAD1E32124500CC3A1F /* SecondViewController.swift */; };
 		2E578EB11E32124500CC3A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EAF1E32124500CC3A1F /* Main.storyboard */; };
 		2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB21E32124500CC3A1F /* Assets.xcassets */; };
 		2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB41E32124500CC3A1F /* LaunchScreen.storyboard */; };
+		81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */; };
+		81F826CE1EA9FCCC00DD9928 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */; };
+		81F826CF1EA9FCCC00DD9928 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */; };
+		81F826D21EA9FCE300DD9928 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D01EA9FCE300DD9928 /* MineViewController.swift */; };
+		81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D11EA9FCE300DD9928 /* MineViewController.xib */; };
+		81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D51EAA003700DD9928 /* ExploreViewController.swift */; };
+		81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D61EAA003700DD9928 /* ExploreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E578EA61E32124500CC3A1F /* MyTabbedApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTabbedApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E578EA91E32124500CC3A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E578EAB1E32124500CC3A1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2E578EAD1E32124500CC3A1F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2E578EB01E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E578EB21E32124500CC3A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E578EB51E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E578EB71E32124500CC3A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		81F826D01EA9FCE300DD9928 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		81F826D11EA9FCE300DD9928 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		81F826D51EAA003700DD9928 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		81F826D61EAA003700DD9928 /* ExploreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		2E578EA81E32124500CC3A1F /* MyTabbedApplication */ = {
 			isa = PBXGroup;
 			children = (
+				81F826C71EA9FBB700DD9928 /* RootViewControllers */,
+				81F826C01EA9F6FB00DD9928 /* 首页 */,
+				81F826C21EA9F70A00DD9928 /* 发现 */,
+				81F826C11EA9F70500DD9928 /* 我的 */,
 				2E578EA91E32124500CC3A1F /* AppDelegate.swift */,
-				2E578EAB1E32124500CC3A1F /* FirstViewController.swift */,
-				2E578EAD1E32124500CC3A1F /* SecondViewController.swift */,
 				2E578EAF1E32124500CC3A1F /* Main.storyboard */,
 				2E578EB21E32124500CC3A1F /* Assets.xcassets */,
 				2E578EB41E32124500CC3A1F /* LaunchScreen.storyboard */,
 				2E578EB71E32124500CC3A1F /* Info.plist */,
 			);
 			path = MyTabbedApplication;
+			sourceTree = "<group>";
+		};
+		81F826C01EA9F6FB00DD9928 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */,
+				81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		81F826C11EA9F70500DD9928 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				81F826D01EA9FCE300DD9928 /* MineViewController.swift */,
+				81F826D11EA9FCE300DD9928 /* MineViewController.xib */,
+			);
+			name = "我的";
+			sourceTree = "<group>";
+		};
+		81F826C21EA9F70A00DD9928 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				81F826D51EAA003700DD9928 /* ExploreViewController.swift */,
+				81F826D61EAA003700DD9928 /* ExploreViewController.xib */,
+			);
+			name = "发现";
+			sourceTree = "<group>";
+		};
+		81F826C71EA9FBB700DD9928 /* RootViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */,
+			);
+			name = RootViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */,
+				81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */,
 				2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */,
 				2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */,
 				2E578EB11E32124500CC3A1F /* Main.storyboard in Resources */,
+				81F826CF1EA9FCCC00DD9928 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E578EAE1E32124500CC3A1F /* SecondViewController.swift in Sources */,
 				2E578EAA1E32124500CC3A1F /* AppDelegate.swift in Sources */,
-				2E578EAC1E32124500CC3A1F /* FirstViewController.swift in Sources */,
+				81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */,
+				81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */,
+				81F826CE1EA9FCCC00DD9928 /* HomeViewController.swift in Sources */,
+				81F826D21EA9FCE300DD9928 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +319,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33UJTTK2KL;
 				INFOPLIST_FILE = MyTabbedApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sen.ke.MyTabbedApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -280,10 +334,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33UJTTK2KL;
 				INFOPLIST_FILE = MyTabbedApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sen.ke.MyTabbedApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -306,6 +362,7 @@
 				2E578EBC1E32124500CC3A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

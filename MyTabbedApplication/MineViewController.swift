@@ -1,25 +1,23 @@
 //
-//  SecondViewController.swift
+//  MineViewController.swift
 //  MyTabbedApplication
 //
-//  Created by ke sen. on 2017/1/20.
+//  Created by sen.ke on 2017/4/21.
 //  Copyright © 2017年 ke sen. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
