@@ -18,15 +18,19 @@
 		81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D11EA9FCE300DD9928 /* MineViewController.xib */; };
 		81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D51EAA003700DD9928 /* ExploreViewController.swift */; };
 		81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D61EAA003700DD9928 /* ExploreViewController.xib */; };
+		EBDDF5440A04E6300F507B04 /* Pods_MyTabbedApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1107EB545BB83186ACF16BF1 /* Pods-MyTabbedApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTabbedApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTabbedApplication/Pods-MyTabbedApplication.release.xcconfig"; sourceTree = "<group>"; };
+		16FE319882B92D9A1A87AA69 /* Pods-MyTabbedApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTabbedApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTabbedApplication/Pods-MyTabbedApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		2E578EA61E32124500CC3A1F /* MyTabbedApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTabbedApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E578EA91E32124500CC3A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E578EB01E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E578EB21E32124500CC3A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E578EB51E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E578EB71E32124500CC3A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTabbedApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBDDF5440A04E6300F507B04 /* Pods_MyTabbedApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				2E578EA81E32124500CC3A1F /* MyTabbedApplication */,
 				2E578EA71E32124500CC3A1F /* Products */,
+				79EF9E029CAC3811A0B89E8B /* Pods */,
+				D2DB0264ACB3A5292934088D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +84,15 @@
 				2E578EB71E32124500CC3A1F /* Info.plist */,
 			);
 			path = MyTabbedApplication;
+			sourceTree = "<group>";
+		};
+		79EF9E029CAC3811A0B89E8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16FE319882B92D9A1A87AA69 /* Pods-MyTabbedApplication.debug.xcconfig */,
+				1107EB545BB83186ACF16BF1 /* Pods-MyTabbedApplication.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		81F826C01EA9F6FB00DD9928 /* 首页 */ = {
@@ -114,6 +130,14 @@
 			name = RootViewControllers;
 			sourceTree = "<group>";
 		};
+		D2DB0264ACB3A5292934088D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E578EBA1E32124500CC3A1F /* Build configuration list for PBXNativeTarget "MyTabbedApplication" */;
 			buildPhases = (
+				9EF7DD29B8EABE2F6A340029 /* [CP] Check Pods Manifest.lock */,
 				2E578EA21E32124500CC3A1F /* Sources */,
 				2E578EA31E32124500CC3A1F /* Frameworks */,
 				2E578EA41E32124500CC3A1F /* Resources */,
+				E827AB79FE590677CCED4247 /* [CP] Embed Pods Frameworks */,
+				5FD1E0AAAE5A7A3ACFC3227A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +211,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD1E0AAAE5A7A3ACFC3227A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTabbedApplication/Pods-MyTabbedApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF7DD29B8EABE2F6A340029 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E827AB79FE590677CCED4247 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTabbedApplication/Pods-MyTabbedApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E578EA21E32124500CC3A1F /* Sources */ = {
@@ -315,6 +390,7 @@
 		};
 		2E578EBB1E32124500CC3A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FE319882B92D9A1A87AA69 /* Pods-MyTabbedApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33UJTTK2KL;
@@ -330,6 +406,7 @@
 		};
 		2E578EBC1E32124500CC3A1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1107EB545BB83186ACF16BF1 /* Pods-MyTabbedApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33UJTTK2KL;
