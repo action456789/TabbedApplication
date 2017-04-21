@@ -18,6 +18,8 @@
 		81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D11EA9FCE300DD9928 /* MineViewController.xib */; };
 		81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D51EAA003700DD9928 /* ExploreViewController.swift */; };
 		81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D61EAA003700DD9928 /* ExploreViewController.xib */; };
+		81F826DE1EAA116A00DD9928 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826DC1EAA116A00DD9928 /* LeftViewController.swift */; };
+		81F826DF1EAA116A00DD9928 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826DD1EAA116A00DD9928 /* LeftViewController.xib */; };
 		EBDDF5440A04E6300F507B04 /* Pods_MyTabbedApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		81F826D11EA9FCE300DD9928 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		81F826D51EAA003700DD9928 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		81F826D61EAA003700DD9928 /* ExploreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
+		81F826DC1EAA116A00DD9928 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		81F826DD1EAA116A00DD9928 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		81F826C01EA9F6FB00DD9928 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				81F826DB1EAA114A00DD9928 /* 侧滑控制器 */,
 				81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */,
 				81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */,
 			);
@@ -128,6 +133,15 @@
 				81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */,
 			);
 			name = RootViewControllers;
+			sourceTree = "<group>";
+		};
+		81F826DB1EAA114A00DD9928 /* 侧滑控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				81F826DC1EAA116A00DD9928 /* LeftViewController.swift */,
+				81F826DD1EAA116A00DD9928 /* LeftViewController.xib */,
+			);
+			name = "侧滑控制器";
 			sourceTree = "<group>";
 		};
 		D2DB0264ACB3A5292934088D /* Frameworks */ = {
@@ -202,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */,
+				81F826DF1EAA116A00DD9928 /* LeftViewController.xib in Resources */,
 				81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */,
 				2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */,
 				2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */,
@@ -268,6 +283,7 @@
 				2E578EAA1E32124500CC3A1F /* AppDelegate.swift in Sources */,
 				81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */,
 				81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */,
+				81F826DE1EAA116A00DD9928 /* LeftViewController.swift in Sources */,
 				81F826CE1EA9FCCC00DD9928 /* HomeViewController.swift in Sources */,
 				81F826D21EA9FCE300DD9928 /* MineViewController.swift in Sources */,
 			);

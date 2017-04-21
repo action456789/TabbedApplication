@@ -8,6 +8,8 @@
 
 import UIKit
 
+import ReactiveCocoa
+import ReactiveSwift
 
 class HomeViewController: UIViewController {
 
@@ -15,17 +17,21 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Nav 左边按钮
+        createLeftNavItem()
+    }
+    
+    private func createLeftNavItem() {
         let leftBtn = UIButton(type: .custom)
         leftBtn.backgroundColor = UIColor.clear
         leftBtn.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
         leftBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 0)
         leftBtn.setImage(UIImage(named: "Mine"), for: .normal)
         leftBtn.setImage(UIImage(named: "mineSelected"), for: .highlighted)
-        leftBtn.addTarget(self, action: #selector(self.leftBarButtomItemClicked(sender:)), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+        
+        leftBtn.reactive.controlEvents(.touchUpInside).observeValues({sender in
+            
+        })
     }
     
-    @objc private func leftBarButtomItemClicked(sender: UIButton) {
-        print(#function)
-    }
 }
