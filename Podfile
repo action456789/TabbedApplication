@@ -5,13 +5,13 @@ target 'MyTabbedApplication' do
     use_frameworks!
 
     pod 'PKRevealController'
-    pod 'Alamofire', '~> 4.4'
-    pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
+    pod 'Alamofire'
+    pod 'AlamofireNetworkActivityIndicator'
     
     pod 'SwiftyJSON'
-    pod 'ObjectMapper', '~> 1.3'
+#    pod 'ObjectMapper'
     pod 'SnapKit'
-    pod 'DeviceKit', '~> 1.0'
+    pod 'DeviceKit'
     pod 'ReactiveCocoa', '~> 5.0.0'
     pod 'RxSwift'
 
