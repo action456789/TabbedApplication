@@ -25,7 +25,6 @@ class MyTabBarController: UITabBarController {
         
         let mine = MineViewController(nibName: nil, bundle: nil)
         setupChildViewController(childVc: mine, title: "我的", imageName: "Mine", selectedImageName: "mineSelected")
-        
     }
     
     private func setupChildViewController(childVc: UIViewController, title: String, imageName: String, selectedImageName: String) {

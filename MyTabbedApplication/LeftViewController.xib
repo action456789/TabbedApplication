@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController" customModule="MyTabbedApplication" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -14,7 +18,67 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xc-7y-w72">
+                    <rect key="frame" x="176" y="20" width="199" height="33"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="7Fd-Ti-SON"/>
+                        <constraint firstAttribute="width" constant="199" id="7Nv-e5-fny"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NF-N9-kXn">
+                    <rect key="frame" x="176" y="61" width="199" height="33"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="VW9-be-ZmN"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOg-xn-Atc">
+                    <rect key="frame" x="176" y="102" width="199" height="33"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="4xI-Qm-Wqt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KO-Eh-5Og">
+                    <rect key="frame" x="176" y="143" width="199" height="33"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="d5n-Ms-6TN"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-0k-aLq">
+                    <rect key="frame" x="176" y="184" width="199" height="33"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="qUS-Qe-nZU"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6Xc-7y-w72" firstAttribute="trailing" secondItem="4NF-N9-kXn" secondAttribute="trailing" id="AOJ-gp-eIi"/>
+                <constraint firstItem="pOg-xn-Atc" firstAttribute="top" secondItem="4NF-N9-kXn" secondAttribute="bottom" constant="8" symbolic="YES" id="Ds5-a8-Kx6"/>
+                <constraint firstItem="4NF-N9-kXn" firstAttribute="top" secondItem="6Xc-7y-w72" secondAttribute="bottom" constant="8" symbolic="YES" id="GlW-DG-2WS"/>
+                <constraint firstItem="pOg-xn-Atc" firstAttribute="leading" secondItem="5KO-Eh-5Og" secondAttribute="leading" id="JTj-Bo-Ofw"/>
+                <constraint firstItem="4NF-N9-kXn" firstAttribute="leading" secondItem="pOg-xn-Atc" secondAttribute="leading" id="K4U-oe-Uob"/>
+                <constraint firstItem="4NF-N9-kXn" firstAttribute="trailing" secondItem="pOg-xn-Atc" secondAttribute="trailing" id="LJR-pA-eOY"/>
+                <constraint firstItem="5Be-0k-aLq" firstAttribute="top" secondItem="5KO-Eh-5Og" secondAttribute="bottom" constant="8" symbolic="YES" id="RZN-BW-fpA"/>
+                <constraint firstAttribute="trailing" secondItem="6Xc-7y-w72" secondAttribute="trailing" id="Uf7-FM-paq"/>
+                <constraint firstItem="6Xc-7y-w72" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="V5G-WR-FlD"/>
+                <constraint firstItem="5KO-Eh-5Og" firstAttribute="leading" secondItem="5Be-0k-aLq" secondAttribute="leading" id="dRd-17-wDK"/>
+                <constraint firstItem="6Xc-7y-w72" firstAttribute="leading" secondItem="4NF-N9-kXn" secondAttribute="leading" id="lMy-1s-Xdp"/>
+                <constraint firstItem="5KO-Eh-5Og" firstAttribute="top" secondItem="pOg-xn-Atc" secondAttribute="bottom" constant="8" symbolic="YES" id="s6r-OZ-oS4"/>
+                <constraint firstItem="pOg-xn-Atc" firstAttribute="trailing" secondItem="5KO-Eh-5Og" secondAttribute="trailing" id="wei-45-6ai"/>
+                <constraint firstItem="5KO-Eh-5Og" firstAttribute="trailing" secondItem="5Be-0k-aLq" secondAttribute="trailing" id="yNX-Tv-CdT"/>
+            </constraints>
+            <point key="canvasLocation" x="-342.5" y="40.5"/>
         </view>
     </objects>
 </document>

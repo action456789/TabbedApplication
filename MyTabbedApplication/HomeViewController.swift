@@ -11,8 +11,12 @@ import UIKit
 import ReactiveCocoa
 import ReactiveSwift
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
+    lazy var transition: RevealTransition = {
+        return RevealTransition()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,8 +34,39 @@ class HomeViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
         
         leftBtn.reactive.controlEvents(.touchUpInside).observeValues({sender in
-            
+            let leftVC = LeftViewController.init(nibName: nil, bundle: nil)
+            setupPresent(from: self.navigationController!, to: leftVC)
+            leftVC.hidesBottomBarWhenPushed = true
+            self.tabBarController?.present(leftVC, animated: true, completion: nil)
         })
+        
+        func setupPresent(from:UIViewController, to: UIViewController) {
+            // setup toVC
+            to.transitioningDelegate = self
+            to.modalPresentationCapturesStatusBarAppearance = true
+            
+            if Double(UIDevice.current.systemVersion)! >= 8.0 {
+                to.modalPresentationStyle = .overCurrentContext
+            } else {
+                to.modalPresentationStyle = .currentContext
+            }
+            
+            // setup fromVC
+            if Double(UIDevice.current.systemVersion)! >= 8.0 {
+                from.modalPresentationStyle = .overCurrentContext
+            } else {
+                from.modalPresentationStyle = .currentContext
+            }
+        }
+    }
+}
+
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
     }
     
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
 }
