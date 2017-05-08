@@ -39,31 +39,36 @@ class HomeViewController: BaseViewController {
         self.modalPresentationCapturesStatusBarAppearance = true
         self.modalPresentationStyle = .custom
 
-        // 添加手势
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.edgePanLeft(edgePan:)))
-        view.addGestureRecognizer(panGesture)
+        // 添加右边侧滑手势
+        let edgePanLeft = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanLeft(edgePan:)))
+        edgePanLeft.edges = .left
+        view.addGestureRecognizer(edgePanLeft)
     }
     
     @objc private func edgePanLeft(edgePan: UIScreenEdgePanGestureRecognizer) {
+        if edgePan.state == .began {
+            self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
+        }
+        
         let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
         print(progress)
         
-        if edgePan.state == .began {
-            persentDrivenTransition = UIPercentDrivenInteractiveTransition()
-            self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
-            
-        } else if edgePan.state == .changed {
-            persentDrivenTransition?.update(progress)
-            
-        } else if edgePan.state == .cancelled || edgePan.state == .ended {
-            if progress > 0.5 {
-                persentDrivenTransition?.finish()
-            } else {
-                persentDrivenTransition?.cancel()
-            }
-            
-            persentDrivenTransition = nil
-        }
+//        if edgePan.state == .began {
+//            persentDrivenTransition = UIPercentDrivenInteractiveTransition()
+//            self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
+//            
+//        } else if edgePan.state == .changed {
+//            persentDrivenTransition?.update(progress)
+//            
+//        } else if edgePan.state == .cancelled || edgePan.state == .ended {
+//            if progress > 0.5 {
+//                persentDrivenTransition?.finish()
+//            } else {
+//                persentDrivenTransition?.cancel()
+//            }
+//            
+//            persentDrivenTransition = nil
+//        }
     }
     
     private func createLeftNavItem() {
