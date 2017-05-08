@@ -14,12 +14,20 @@ class HomeViewController: BaseViewController {
     lazy var leftVC: LeftViewController = {
         let leftVC =  LeftViewController.init(nibName: nil, bundle: nil)
         
-        leftVC.transitioningDelegate = TransitionDelegate.shared
+        leftVC.transitioningDelegate = self
         leftVC.modalPresentationCapturesStatusBarAppearance = true
         leftVC.modalPresentationStyle = .custom
         
         return leftVC
     }()
+    
+    // 转场动画
+    lazy var transition: RevealTransition = {
+        return RevealTransition()
+    }()
+    
+    // 手势驱动
+    var persentDrivenTransition: UIPercentDrivenInteractiveTransition?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +35,13 @@ class HomeViewController: BaseViewController {
         // Nav 左边按钮
         createLeftNavItem()
 
-        self.transitioningDelegate = TransitionDelegate.shared
+        self.transitioningDelegate = self
         self.modalPresentationCapturesStatusBarAppearance = true
         self.modalPresentationStyle = .custom
 
-        // 添加侧滑手势
-        let edgePanLeft = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanLeft(edgePan:)))
-        edgePanLeft.edges = .left
-        view.addGestureRecognizer(edgePanLeft)
+        // 添加手势
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.edgePanLeft(edgePan:)))
+        view.addGestureRecognizer(panGesture)
     }
     
     @objc private func edgePanLeft(edgePan: UIScreenEdgePanGestureRecognizer) {
@@ -42,19 +49,20 @@ class HomeViewController: BaseViewController {
         print(progress)
         
         if edgePan.state == .began {
-            TransitionDelegate.shared.persentDrivenTransition = UIPercentDrivenInteractiveTransition()
+            persentDrivenTransition = UIPercentDrivenInteractiveTransition()
             self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
             
         } else if edgePan.state == .changed {
-            TransitionDelegate.shared.persentDrivenTransition?.update(progress)
+            persentDrivenTransition?.update(progress)
             
         } else if edgePan.state == .cancelled || edgePan.state == .ended {
             if progress > 0.5 {
-                TransitionDelegate.shared.persentDrivenTransition?.finish()
+                persentDrivenTransition?.finish()
             } else {
-                TransitionDelegate.shared.persentDrivenTransition?.cancel()
+                persentDrivenTransition?.cancel()
             }
-            TransitionDelegate.shared.persentDrivenTransition = nil
+            
+            persentDrivenTransition = nil
         }
     }
     
@@ -74,4 +82,35 @@ class HomeViewController: BaseViewController {
     func buttonClick() {
         self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
     }
+}
+
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return MyPresentaionController(presentedViewController: presented, presenting: presenting)
+    }
+    
+    // 自定义 present
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    
+    // 自定义 dismiss
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    
+    // 手势驱动
+    //    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    //        if animator.isKind(of: RevealTransition.self)  {
+    //            return persentDrivenTransition
+    //        }
+    //        return nil
+    //    }
+    
+//    func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+//        if animator.isKind(of: RevealTransition.self)  {
+//            return persentDrivenTransition
+//        }
+//        return nil
+//    }
 }
