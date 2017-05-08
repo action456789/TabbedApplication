@@ -25,11 +25,23 @@ class RevealTransition: NSObject {
         maskView.backgroundColor = UIColor.black
         maskView.alpha = 0
         maskView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.maskViewTap)))
+        
+        // 添加右边侧滑手势
+        let edgePanRight = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanRight(edgePan:)))
+        edgePanRight.edges = .right
+        maskView.addGestureRecognizer(edgePanRight)
+        
         return maskView
     }()
     
     @objc private func maskViewTap() {
         homeVC?.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func edgePanRight(edgePan: UIScreenEdgePanGestureRecognizer) {
+        if edgePan.state == .began {
+            homeVC?.dismiss(animated: true, completion: nil)
+        }
     }
 }
 

@@ -32,12 +32,12 @@ class HomeViewController: BaseViewController {
         self.modalPresentationStyle = .custom
 
         // 添加侧滑手势
-        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanGesture(edgePan:)))
-        edgePan.edges = UIRectEdge.left
-        view.addGestureRecognizer(edgePan)
+        let edgePanLeft = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanLeft(edgePan:)))
+        edgePanLeft.edges = .left
+        view.addGestureRecognizer(edgePanLeft)
     }
     
-    @objc private func edgePanGesture(edgePan: UIScreenEdgePanGestureRecognizer) {
+    @objc private func edgePanLeft(edgePan: UIScreenEdgePanGestureRecognizer) {
         let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
         print(progress)
         
