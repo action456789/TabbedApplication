@@ -11,6 +11,8 @@
 		2E578EB11E32124500CC3A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EAF1E32124500CC3A1F /* Main.storyboard */; };
 		2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB21E32124500CC3A1F /* Assets.xcassets */; };
 		2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB41E32124500CC3A1F /* LaunchScreen.storyboard */; };
+		814018F11EC059C000C5B854 /* MyPresentaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018F01EC059C000C5B854 /* MyPresentaionController.swift */; };
+		814018F31EC05C3C00C5B854 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018F21EC05C3C00C5B854 /* TransitionDelegate.swift */; };
 		818131551EBC50A600CEEA97 /* RevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818131541EBC50A600CEEA97 /* RevealTransition.swift */; };
 		818131571EBC6DAA00CEEA97 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818131561EBC6DAA00CEEA97 /* BaseViewController.swift */; };
 		81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */; };
@@ -35,6 +37,8 @@
 		2E578EB51E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E578EB71E32124500CC3A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTabbedApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		814018F01EC059C000C5B854 /* MyPresentaionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPresentaionController.swift; sourceTree = "<group>"; };
+		814018F21EC05C3C00C5B854 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
 		818131541EBC50A600CEEA97 /* RevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealTransition.swift; sourceTree = "<group>"; };
 		818131561EBC6DAA00CEEA97 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		81F826DB1EAA114A00DD9928 /* 侧滑控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				814018F21EC05C3C00C5B854 /* TransitionDelegate.swift */,
+				814018F01EC059C000C5B854 /* MyPresentaionController.swift */,
 				818131541EBC50A600CEEA97 /* RevealTransition.swift */,
 				81F826DC1EAA116A00DD9928 /* LeftViewController.swift */,
 				81F826DD1EAA116A00DD9928 /* LeftViewController.xib */,
@@ -193,7 +199,7 @@
 				TargetAttributes = {
 					2E578EA51E32124500CC3A1F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 33UJTTK2KL;
+						DevelopmentTeam = DHZ4447J4K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -287,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				818131551EBC50A600CEEA97 /* RevealTransition.swift in Sources */,
+				814018F31EC05C3C00C5B854 /* TransitionDelegate.swift in Sources */,
 				2E578EAA1E32124500CC3A1F /* AppDelegate.swift in Sources */,
+				814018F11EC059C000C5B854 /* MyPresentaionController.swift in Sources */,
 				81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */,
 				81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */,
 				81F826DE1EAA116A00DD9928 /* LeftViewController.swift in Sources */,
@@ -417,11 +425,11 @@
 			baseConfigurationReference = 16FE319882B92D9A1A87AA69 /* Pods-MyTabbedApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33UJTTK2KL;
+				DEVELOPMENT_TEAM = DHZ4447J4K;
 				INFOPLIST_FILE = MyTabbedApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sen.ke.MyTabbedApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = kk.MyTabbedApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,11 +441,11 @@
 			baseConfigurationReference = 1107EB545BB83186ACF16BF1 /* Pods-MyTabbedApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 33UJTTK2KL;
+				DEVELOPMENT_TEAM = DHZ4447J4K;
 				INFOPLIST_FILE = MyTabbedApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sen.ke.MyTabbedApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = kk.MyTabbedApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

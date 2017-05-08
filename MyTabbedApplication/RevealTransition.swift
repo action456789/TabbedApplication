@@ -34,6 +34,7 @@ class RevealTransition: NSObject {
 }
 
 extension RevealTransition: UIViewControllerAnimatedTransitioning {
+    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.3
     }

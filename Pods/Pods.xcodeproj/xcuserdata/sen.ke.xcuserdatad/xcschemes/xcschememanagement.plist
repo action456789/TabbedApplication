@@ -19,32 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PKRevealController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-MyTabbedApplication.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Result.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,22 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19D81BC23CD6C7D13982E3D4ECD06AD7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1D3116BE522359D35C32A7FAB05FCF2E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D7AAA2B0F3CC1B534AED57967A32C49</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7FA025D4FC1B7DA24983AD4179B6C5A0</key>
+		<key>617B3410FF9D4B3D7F17BD518F663676</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,27 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91C14B1D38833BDC1A596A4F41FDEFFF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B74671AC4AD442223B677430EE6BBBF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9A1160754A6FFB0E723C10C06BD7ED3</key>
+		<key>CF68C976E8CD3934D33D3B9D35702D5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C836BDB6B720230DB5F020219FA7FC6F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CD79378E0343D7DBF2C63B252C309BA5</key>
+		<key>F602370B2AB381791A63C54CA59E793A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

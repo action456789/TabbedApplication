@@ -8,20 +8,54 @@
 
 import UIKit
 
-import ReactiveCocoa
-import ReactiveSwift
-
 class HomeViewController: BaseViewController {
-
-    lazy var transition: RevealTransition = {
-        return RevealTransition()
-    }()
     
+    // 左边控制器
+    lazy var leftVC: LeftViewController = {
+        let leftVC =  LeftViewController.init(nibName: nil, bundle: nil)
+        
+        leftVC.transitioningDelegate = TransitionDelegate.shared
+        leftVC.modalPresentationCapturesStatusBarAppearance = true
+        leftVC.modalPresentationStyle = .custom
+        
+        return leftVC
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Nav 左边按钮
         createLeftNavItem()
+
+        self.transitioningDelegate = TransitionDelegate.shared
+        self.modalPresentationCapturesStatusBarAppearance = true
+        self.modalPresentationStyle = .custom
+
+        // 添加侧滑手势
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(self.edgePanGesture(edgePan:)))
+        edgePan.edges = UIRectEdge.left
+        view.addGestureRecognizer(edgePan)
+    }
+    
+    @objc private func edgePanGesture(edgePan: UIScreenEdgePanGestureRecognizer) {
+        let progress = edgePan.translation(in: self.view).x / self.view.bounds.width
+        print(progress)
+        
+        if edgePan.state == .began {
+            TransitionDelegate.shared.persentDrivenTransition = UIPercentDrivenInteractiveTransition()
+            self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
+            
+        } else if edgePan.state == .changed {
+            TransitionDelegate.shared.persentDrivenTransition?.update(progress)
+            
+        } else if edgePan.state == .cancelled || edgePan.state == .ended {
+            if progress > 0.5 {
+                TransitionDelegate.shared.persentDrivenTransition?.finish()
+            } else {
+                TransitionDelegate.shared.persentDrivenTransition?.cancel()
+            }
+            TransitionDelegate.shared.persentDrivenTransition = nil
+        }
     }
     
     private func createLeftNavItem() {
@@ -33,40 +67,11 @@ class HomeViewController: BaseViewController {
         leftBtn.setImage(UIImage(named: "mineSelected"), for: .highlighted)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
         
-        leftBtn.reactive.controlEvents(.touchUpInside).observeValues({sender in
-            let leftVC = LeftViewController.init(nibName: nil, bundle: nil)
-            setupPresent(from: self.navigationController!, to: leftVC)
-            leftVC.hidesBottomBarWhenPushed = true
-            self.tabBarController?.present(leftVC, animated: true, completion: nil)
-        })
-        
-        func setupPresent(from:UIViewController, to: UIViewController) {
-            // setup toVC
-            to.transitioningDelegate = self
-            to.modalPresentationCapturesStatusBarAppearance = true
-            
-            if Double(UIDevice.current.systemVersion)! >= 8.0 {
-                to.modalPresentationStyle = .overCurrentContext
-            } else {
-                to.modalPresentationStyle = .currentContext
-            }
-            
-            // setup fromVC
-            if Double(UIDevice.current.systemVersion)! >= 8.0 {
-                from.modalPresentationStyle = .overCurrentContext
-            } else {
-                from.modalPresentationStyle = .currentContext
-            }
-        }
-    }
-}
-
-extension HomeViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return transition
+        // 按钮点击事件
+        leftBtn.addTarget(self, action: #selector(self.buttonClick), for: .touchUpInside)
     }
     
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return transition
+    func buttonClick() {
+        self.tabBarController?.present(self.leftVC, animated: true, completion: nil)
     }
 }
