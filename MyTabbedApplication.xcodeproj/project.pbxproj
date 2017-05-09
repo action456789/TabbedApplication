@@ -11,18 +11,22 @@
 		2E578EB11E32124500CC3A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EAF1E32124500CC3A1F /* Main.storyboard */; };
 		2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB21E32124500CC3A1F /* Assets.xcassets */; };
 		2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E578EB41E32124500CC3A1F /* LaunchScreen.storyboard */; };
-		814018F11EC059C000C5B854 /* MyPresentaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018F01EC059C000C5B854 /* MyPresentaionController.swift */; };
-		818131551EBC50A600CEEA97 /* RevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818131541EBC50A600CEEA97 /* RevealTransition.swift */; };
-		818131571EBC6DAA00CEEA97 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818131561EBC6DAA00CEEA97 /* BaseViewController.swift */; };
-		81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */; };
-		81F826CE1EA9FCCC00DD9928 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */; };
-		81F826CF1EA9FCCC00DD9928 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */; };
-		81F826D21EA9FCE300DD9928 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D01EA9FCE300DD9928 /* MineViewController.swift */; };
-		81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D11EA9FCE300DD9928 /* MineViewController.xib */; };
-		81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826D51EAA003700DD9928 /* ExploreViewController.swift */; };
-		81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826D61EAA003700DD9928 /* ExploreViewController.xib */; };
-		81F826DE1EAA116A00DD9928 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F826DC1EAA116A00DD9928 /* LeftViewController.swift */; };
-		81F826DF1EAA116A00DD9928 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F826DD1EAA116A00DD9928 /* LeftViewController.xib */; };
+		814019071EC154E900C5B854 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018FC1EC154E900C5B854 /* LeftViewController.swift */; };
+		814019081EC154E900C5B854 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814018FD1EC154E900C5B854 /* LeftViewController.xib */; };
+		814019091EC154E900C5B854 /* MyPresentaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018FE1EC154E900C5B854 /* MyPresentaionController.swift */; };
+		8140190A1EC154E900C5B854 /* RevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814018FF1EC154E900C5B854 /* RevealTransition.swift */; };
+		8140190B1EC154E900C5B854 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814019041EC154E900C5B854 /* HomeViewController.swift */; };
+		8140190C1EC154E900C5B854 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814019051EC154E900C5B854 /* HomeViewController.xib */; };
+		814019101EC1550A00C5B854 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140190E1EC1550A00C5B854 /* BaseViewController.swift */; };
+		814019111EC1550A00C5B854 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140190F1EC1550A00C5B854 /* MyTabBarController.swift */; };
+		814019141EC1552C00C5B854 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814019121EC1552C00C5B854 /* SettingViewController.swift */; };
+		814019151EC1552C00C5B854 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814019131EC1552C00C5B854 /* SettingViewController.xib */; };
+		814019181EC1553C00C5B854 /* LivingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814019161EC1553C00C5B854 /* LivingRoomViewController.swift */; };
+		814019191EC1553C00C5B854 /* LivingRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814019171EC1553C00C5B854 /* LivingRoomViewController.xib */; };
+		8140191C1EC1556900C5B854 /* ScenesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140191A1EC1556900C5B854 /* ScenesViewController.swift */; };
+		8140191D1EC1556900C5B854 /* ScenesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8140191B1EC1556900C5B854 /* ScenesViewController.xib */; };
+		814019201EC155AF00C5B854 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140191E1EC155AF00C5B854 /* VoiceViewController.swift */; };
+		814019211EC155AF00C5B854 /* VoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8140191F1EC155AF00C5B854 /* VoiceViewController.xib */; };
 		EBDDF5440A04E6300F507B04 /* Pods_MyTabbedApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,18 +40,22 @@
 		2E578EB51E32124500CC3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E578EB71E32124500CC3A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6DC441A196EB78ABA0499A /* Pods_MyTabbedApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTabbedApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		814018F01EC059C000C5B854 /* MyPresentaionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPresentaionController.swift; sourceTree = "<group>"; };
-		818131541EBC50A600CEEA97 /* RevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealTransition.swift; sourceTree = "<group>"; };
-		818131561EBC6DAA00CEEA97 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
-		81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		81F826D01EA9FCE300DD9928 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		81F826D11EA9FCE300DD9928 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
-		81F826D51EAA003700DD9928 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		81F826D61EAA003700DD9928 /* ExploreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
-		81F826DC1EAA116A00DD9928 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		81F826DD1EAA116A00DD9928 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		814018FC1EC154E900C5B854 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		814018FD1EC154E900C5B854 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		814018FE1EC154E900C5B854 /* MyPresentaionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPresentaionController.swift; sourceTree = "<group>"; };
+		814018FF1EC154E900C5B854 /* RevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealTransition.swift; sourceTree = "<group>"; };
+		814019041EC154E900C5B854 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		814019051EC154E900C5B854 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8140190E1EC1550A00C5B854 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8140190F1EC1550A00C5B854 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		814019121EC1552C00C5B854 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		814019131EC1552C00C5B854 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		814019161EC1553C00C5B854 /* LivingRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingRoomViewController.swift; sourceTree = "<group>"; };
+		814019171EC1553C00C5B854 /* LivingRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LivingRoomViewController.xib; sourceTree = "<group>"; };
+		8140191A1EC1556900C5B854 /* ScenesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenesViewController.swift; sourceTree = "<group>"; };
+		8140191B1EC1556900C5B854 /* ScenesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenesViewController.xib; sourceTree = "<group>"; };
+		8140191E1EC155AF00C5B854 /* VoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		8140191F1EC155AF00C5B854 /* VoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +91,13 @@
 		2E578EA81E32124500CC3A1F /* MyTabbedApplication */ = {
 			isa = PBXGroup;
 			children = (
-				81F826C71EA9FBB700DD9928 /* RootViewControllers */,
-				81F826C01EA9F6FB00DD9928 /* 首页 */,
-				81F826C21EA9F70A00DD9928 /* 发现 */,
-				81F826C11EA9F70500DD9928 /* 我的 */,
+				8140190D1EC1550A00C5B854 /* Root */,
+				814018FB1EC154E900C5B854 /* 侧边栏 */,
+				814019001EC154E900C5B854 /* 场景 */,
+				814019011EC154E900C5B854 /* 客厅 */,
+				814019021EC154E900C5B854 /* 设置 */,
+				814019031EC154E900C5B854 /* 首页 */,
+				814019061EC154E900C5B854 /* 语音 */,
 				2E578EA91E32124500CC3A1F /* AppDelegate.swift */,
 				2E578EAF1E32124500CC3A1F /* Main.storyboard */,
 				2E578EB21E32124500CC3A1F /* Assets.xcassets */,
@@ -105,52 +116,69 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		81F826C01EA9F6FB00DD9928 /* 首页 */ = {
+		814018FB1EC154E900C5B854 /* 侧边栏 */ = {
 			isa = PBXGroup;
 			children = (
-				81F826DB1EAA114A00DD9928 /* 侧滑控制器 */,
-				81F826CC1EA9FCCC00DD9928 /* HomeViewController.swift */,
-				81F826CD1EA9FCCC00DD9928 /* HomeViewController.xib */,
+				814018FC1EC154E900C5B854 /* LeftViewController.swift */,
+				814018FD1EC154E900C5B854 /* LeftViewController.xib */,
+				814018FE1EC154E900C5B854 /* MyPresentaionController.swift */,
+				814018FF1EC154E900C5B854 /* RevealTransition.swift */,
 			);
-			name = "首页";
+			path = "侧边栏";
 			sourceTree = "<group>";
 		};
-		81F826C11EA9F70500DD9928 /* 我的 */ = {
+		814019001EC154E900C5B854 /* 场景 */ = {
 			isa = PBXGroup;
 			children = (
-				81F826D01EA9FCE300DD9928 /* MineViewController.swift */,
-				81F826D11EA9FCE300DD9928 /* MineViewController.xib */,
+				8140191A1EC1556900C5B854 /* ScenesViewController.swift */,
+				8140191B1EC1556900C5B854 /* ScenesViewController.xib */,
 			);
-			name = "我的";
+			path = "场景";
 			sourceTree = "<group>";
 		};
-		81F826C21EA9F70A00DD9928 /* 发现 */ = {
+		814019011EC154E900C5B854 /* 客厅 */ = {
 			isa = PBXGroup;
 			children = (
-				81F826D51EAA003700DD9928 /* ExploreViewController.swift */,
-				81F826D61EAA003700DD9928 /* ExploreViewController.xib */,
+				814019161EC1553C00C5B854 /* LivingRoomViewController.swift */,
+				814019171EC1553C00C5B854 /* LivingRoomViewController.xib */,
 			);
-			name = "发现";
+			path = "客厅";
 			sourceTree = "<group>";
 		};
-		81F826C71EA9FBB700DD9928 /* RootViewControllers */ = {
+		814019021EC154E900C5B854 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
-				81F826CA1EA9FC6000DD9928 /* MyTabBarController.swift */,
-				818131561EBC6DAA00CEEA97 /* BaseViewController.swift */,
+				814019121EC1552C00C5B854 /* SettingViewController.swift */,
+				814019131EC1552C00C5B854 /* SettingViewController.xib */,
 			);
-			name = RootViewControllers;
+			path = "设置";
 			sourceTree = "<group>";
 		};
-		81F826DB1EAA114A00DD9928 /* 侧滑控制器 */ = {
+		814019031EC154E900C5B854 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				814018F01EC059C000C5B854 /* MyPresentaionController.swift */,
-				818131541EBC50A600CEEA97 /* RevealTransition.swift */,
-				81F826DC1EAA116A00DD9928 /* LeftViewController.swift */,
-				81F826DD1EAA116A00DD9928 /* LeftViewController.xib */,
+				814019041EC154E900C5B854 /* HomeViewController.swift */,
+				814019051EC154E900C5B854 /* HomeViewController.xib */,
 			);
-			name = "侧滑控制器";
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		814019061EC154E900C5B854 /* 语音 */ = {
+			isa = PBXGroup;
+			children = (
+				8140191E1EC155AF00C5B854 /* VoiceViewController.swift */,
+				8140191F1EC155AF00C5B854 /* VoiceViewController.xib */,
+			);
+			path = "语音";
+			sourceTree = "<group>";
+		};
+		8140190D1EC1550A00C5B854 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8140190E1EC1550A00C5B854 /* BaseViewController.swift */,
+				8140190F1EC1550A00C5B854 /* MyTabBarController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		D2DB0264ACB3A5292934088D /* Frameworks */ = {
@@ -224,13 +252,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F826D81EAA003700DD9928 /* ExploreViewController.xib in Resources */,
-				81F826DF1EAA116A00DD9928 /* LeftViewController.xib in Resources */,
-				81F826D31EA9FCE300DD9928 /* MineViewController.xib in Resources */,
+				814019081EC154E900C5B854 /* LeftViewController.xib in Resources */,
+				8140191D1EC1556900C5B854 /* ScenesViewController.xib in Resources */,
+				814019151EC1552C00C5B854 /* SettingViewController.xib in Resources */,
 				2E578EB61E32124500CC3A1F /* LaunchScreen.storyboard in Resources */,
 				2E578EB31E32124500CC3A1F /* Assets.xcassets in Resources */,
+				814019211EC155AF00C5B854 /* VoiceViewController.xib in Resources */,
+				814019191EC1553C00C5B854 /* LivingRoomViewController.xib in Resources */,
+				8140190C1EC154E900C5B854 /* HomeViewController.xib in Resources */,
 				2E578EB11E32124500CC3A1F /* Main.storyboard in Resources */,
-				81F826CF1EA9FCCC00DD9928 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,15 +319,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818131551EBC50A600CEEA97 /* RevealTransition.swift in Sources */,
+				814019201EC155AF00C5B854 /* VoiceViewController.swift in Sources */,
 				2E578EAA1E32124500CC3A1F /* AppDelegate.swift in Sources */,
-				814018F11EC059C000C5B854 /* MyPresentaionController.swift in Sources */,
-				81F826CB1EA9FC6000DD9928 /* MyTabBarController.swift in Sources */,
-				81F826D71EAA003700DD9928 /* ExploreViewController.swift in Sources */,
-				81F826DE1EAA116A00DD9928 /* LeftViewController.swift in Sources */,
-				81F826CE1EA9FCCC00DD9928 /* HomeViewController.swift in Sources */,
-				818131571EBC6DAA00CEEA97 /* BaseViewController.swift in Sources */,
-				81F826D21EA9FCE300DD9928 /* MineViewController.swift in Sources */,
+				8140191C1EC1556900C5B854 /* ScenesViewController.swift in Sources */,
+				814019071EC154E900C5B854 /* LeftViewController.swift in Sources */,
+				814019181EC1553C00C5B854 /* LivingRoomViewController.swift in Sources */,
+				814019091EC154E900C5B854 /* MyPresentaionController.swift in Sources */,
+				814019141EC1552C00C5B854 /* SettingViewController.swift in Sources */,
+				8140190B1EC154E900C5B854 /* HomeViewController.swift in Sources */,
+				8140190A1EC154E900C5B854 /* RevealTransition.swift in Sources */,
+				814019101EC1550A00C5B854 /* BaseViewController.swift in Sources */,
+				814019111EC1550A00C5B854 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
